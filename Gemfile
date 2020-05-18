@@ -9,7 +9,7 @@ gem 'rails',                    '~> 6.0.3'
 
 gem 'bootsnap',                 '~> 1.4', '>= 1.4.5', require: false
 
-gem 'graphql',                  '~> 1.9'
+gem 'graphql',                  '~> 1.10', '>= 1.10.9'
 
 gem 'jbuilder',                 '~> 2.7'
 
@@ -25,12 +25,12 @@ gem 'webpacker',                '~> 4.0'
 gem 'rack-cors',                '~> 1.0'
 
 group :development, :test do
-  gem 'byebug',                 '~> 11.0', '>= 11.0.1'
+  gem 'byebug', '~> 11.0', '>= 11.0.1'
   # gem 'byebug',                 platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
-  gem 'graphiql-rails',         '~> 1.7'
+  gem 'graphql_playground-rails', '~> 2.1.0'
 
   gem 'listen',                 '>= 3.0.5', '< 3.2'
 

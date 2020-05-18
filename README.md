@@ -250,16 +250,10 @@ The purpose of this example is to provide details as to how one would go about u
 18. configure the graphql dependencies for our application
 
     ```zsh
-    rails generate graphql:install
+    rails generate graphql:install --playground --skip-graphiql
     ```
 
-19. replace `gem 'graphiql-rails', group: :development` within `Gemfile` to the following:
-
-    ```zsh
-    bundle add graphiql-rails --group 'development'
-    ```
-
-20. add the GraphQL schema which represents our entry point into our GraphQL structure:
+19. add the GraphQL schema which represents our entry point into our GraphQL structure:
 
     `app/graphql/zero_rails_schema.rb`:
 
@@ -272,7 +266,7 @@ The purpose of this example is to provide details as to how one would go about u
     end
     ```
 
-21. add our PersonType:
+20. add our PersonType:
 
     `app/graphql/types/person_type.rb`:
 
@@ -312,7 +306,7 @@ The purpose of this example is to provide details as to how one would go about u
     end
     ```
 
-22. update our QueryType to look like the following:
+21. update our QueryType to look like the following:
 
     `app/graphql/types/person_type.rb`:
 
@@ -333,7 +327,7 @@ The purpose of this example is to provide details as to how one would go about u
     end
     ```
 
-23. add routes for mounting the GraphiQL browser endpoint and submitting GraphQL document requests:
+22. add routes for mounting the GraphiQL browser endpoint and submitting GraphQL document requests:
 
     `config/routes.rb`:
 
@@ -344,7 +338,7 @@ The purpose of this example is to provide details as to how one would go about u
     post "/graphql", to: "graphql#execute"
     ```
 
-24. add the following two lines to the bottom of our manifest file:
+23. add the following two lines to the bottom of our manifest file:
 
     `app/assets/config/manifest.js`:
 
@@ -353,19 +347,19 @@ The purpose of this example is to provide details as to how one would go about u
     //= link graphiql/rails/application.js
     ```
 
-25. start the server
+24. start the server
 
     ```zsh
     rails s
     ```
 
-26. navigate to our application within the browser
+25. navigate to our application within the browser
 
     ```bash
     open http://localhost:3000/graphiql
     ```
 
-27. enter and run GraphQL query
+26. enter and run GraphQL query
 
     ```graphql
     {
