@@ -6,7 +6,7 @@ The purpose of this example is to provide details as to how one would go about u
 
 ## Software requirements
 
-- Node 12.2.0 or higher
+- Node 14.2.0 or higher
 
 - PostgreSQL 12.2 or higher
 
