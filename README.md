@@ -67,7 +67,7 @@ The purpose of this example is to provide details as to how one would go about u
 7.  navigate to our application within the browser
 
     ```bash
-    open http://localhost:3000/graphiql
+    open http://localhost:3000/playground
     ```
 
 8.  enter and run GraphQL query
@@ -356,7 +356,7 @@ The purpose of this example is to provide details as to how one would go about u
 25. navigate to our application within the browser
 
     ```bash
-    open http://localhost:3000/graphiql
+    open http://localhost:3000/playground
     ```
 
 26. enter and run GraphQL query
